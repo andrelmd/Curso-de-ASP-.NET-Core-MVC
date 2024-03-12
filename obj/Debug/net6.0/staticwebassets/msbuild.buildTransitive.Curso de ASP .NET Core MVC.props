@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/Curso de ASP .NET Core MVC.props" />
+</Project>
