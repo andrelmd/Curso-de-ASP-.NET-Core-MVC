@@ -1,13 +1,13 @@
 ﻿@{
     ViewData["Title"] = "UploadaFiles";
 }
-<img src="~/images/upload2.png" width="200" height="150" />
+<img src="~/images/upload2.png" width="200" height="150" asp-append-version="true" />
 <hr />
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
         @if (ViewData["Erro"] != null)
         {
-            <img src="~/images/erro1.png" width="150" height="150" />
+            <img src="~/images/erro1.png" width="150" height="150" asp-append-version="true" />
             <h4>@ViewData["Erro"]</h4>
         }
     </div>

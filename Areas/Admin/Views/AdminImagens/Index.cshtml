@@ -5,7 +5,7 @@
     <tr>
         <td>
             <form method="post" enctype="multipart/form-data" asp-controller="AdminImagens" asp-action="UploadFiles">
-                <img src="~/images/upload2.png" width="200" height="150" />
+                <img src="~/images/upload2.png" width="200" height="150" asp-append-version="true" />
                 <hr />
                 <div class="form-group">
                     <div class="col-md-10">
@@ -33,8 +33,7 @@
                 <hr />
                 <div class="form-group">
                     <div class="col-md-10">
-                        <input type="submit" value="Visualizar Arquivos no servidor"
-                            class="button btn-outline-warning" />
+                        <input type="submit" value="Visualizar Arquivos no servidor" class="button btn-outline-warning" />
                     </div>
                 </div>
             </form>
@@ -44,6 +43,7 @@
 <div class="container">
     @if (ViewData["Deletado"] != null)
     {
-        <li>@ViewData["Deletado"]</li>
+            <li>@ViewData["Deletado"]</li>
     }
 </div>
+
